@@ -53,8 +53,8 @@ class InstaBot:
                 bot.get(pic_href)
                 time.sleep(3)
                 try:
-                    bot.find_element_by_class_name(
-                        '//button[@class="wpO6b "').click()
+                    bot.find_element_by_xpath(
+                        '/html/body/div[1]/section/main/div/div[1]/article/div[2]/section[1]/span[1]/button').click()
                     time.sleep(20)
                     print('Like aplicado')
                 except Exception:
