@@ -54,7 +54,7 @@ class InstaBot:
                 time.sleep(3)
                 try:
                     bot.find_element_by_class_name(
-                        '//button[@class="wpO6b"').click()
+                        '//button[@class="wpO6b "').click()
                     time.sleep(20)
                     print('Like aplicado')
                 except Exception:
