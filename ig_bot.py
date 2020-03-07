@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+from secrets import *
 
 
 class InstaBot:
@@ -70,11 +71,7 @@ class InstaBot:
         time.sleep(5)
 
 
-coursew = InstaBot('galeria.brindel', 'Celia123!')
+hashtag = input("Hashtag Para Curtir: ")
+coursew = InstaBot(uname, pw)
 coursew.login()
-coursew.like_photos('quadrossala')
-'''
-saladeestardecorada
-decoracaodecasa
-decoracao
-'''
+coursew.like_photos(hashtag)
